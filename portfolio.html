@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+            width: 200px;
+            top: 0;
+            left: 0;
+            padding-top: 50px; 
+            background-color: #333;
+            color: white;
+        }
+        
+        
+        .sidebar .nav-link:hover {
+            background-color: #ddd;
+        }
+        
+        .nav-item {
+            padding-bottom: 20px; 
+        }
+        
+        main {
+            margin-left: 200px; 
+            padding: 32px; 
+        }
+        
+        section {
+            padding: 32px; 
+            margin: 16px 0; 
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h3 {
+            color: white;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        
+        .project {
+            margin: 16px 0; 
+        }
+        
+        .project h3 {
+            margin: 0;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+        .main-content1.blurred, .main-content2.blurred {
+            filter: blur(5px);
+        }
+        
+        .aboutbar.open, .skillsbar.open, .projectbar.open, .contactbar.open {
+            display: block;
+        }
+        
+        .aboutbar, .skillsbar, .projectbar {
+            display: none;
+            position: fixed;
+            left: 10%;
+            width: 80%;
+            height: 65%;
+            top: 17%;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 20px; 
+            z-index: 1000;
+        }
+        
+        .contactbar {
+            display: none;
+            position: fixed;
+            left: 30%;
+            width: 40%;
+            height: 30%;
+            top: 30%;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 20px; 
+            z-index: 1000; 
+        }
+        
+        .close {
+            float: right;
+            padding-bottom: 10px; 
+        }
+        
+        .iitilogo {
+            padding-left: 5vw; 
+            width: 15vw; 
+            height: auto; 
+        }
+        
+        .cse {
+            width: 20vw; 
+            padding-left: 5vw; 
+            padding-right: 5vw; 
+        }
+        
+        .skills-logo {
+            width: 40vw; 
+            padding-left: 20vw; 
+        }
+        
+        .code {
+            height: 10vw; 
+        }
+        
+        .chess {
+            width: 12vw; 
+            padding-left: 20vw; 
+            padding-right: 5vw; 
+        }
+        
+        .mysql {
+            width: 15vw; 
+            height: auto; 
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="main-content1">
+        <div class="row">
+            <nav id="sidebar" class="col-12 col-lg-5 d-none d-md-block sidebar">
+                <div class="position-sticky">
+                    <h3 class="name">ANNAMAREDDI SUHITHA</h3>
+                    <h3 class="name">230001008</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item" id="about-pop">About</li>
+                        <li class="nav-item" id="skills-pop">Skills</li>
+                        <li class="nav-item" id="project-pop">Portfolio</li>
+                        <li class="nav-item" id="contact-pop">contact</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+            <div class="aboutbar" id="aboutbar">
+               <div class="close"><svg width="10" height="10" viewBox="0 0 10 10" style="color:currentColor" xmlns="http://www.w3.org/2000/svg" class="h-full w-full"><rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent" stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect></svg><svg width="40px" height="40px" viewBox="0 0 24 24"
+                fill="currentColor" x="236" y="236" role="img" style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" onclick="closeaboutbar()">
+                   <path fill="currentColor" d="M16.066 8.995a.75.75 0 1 0-1.06-1.061L12 10.939L8.995 7.934a.75.75 0 1 0-1.06 1.06L10.938 12l-3.005 3.005a.75.75 0 0 0 1.06 1.06L12 13.06l3.005 3.006a.75.75 0 0 0 1.06-1.06L13.062 12l3.005-3.005Z"/></g></svg>
+                </div>
+                <br>
+                <div class="text">
+                    <h2>About Me</h2>
+                    <p>My name is Annamareddi Suhitha, and I'm currently a second-year student pursuing a degree in Computer Science Engineering
+                    at IIT Indore. I have a strong passion for programming and software development, and I enjoy exploring new
+                     technologies and coding languages. In addition to my studies, I'm involved in various student clubs, including 
+                     the coding club and, where I collaborate with peers on projects and competitions. I'm excited to deepen
+                      my knowledge in areas like artificial intelligence and machine learning as I progress in my studies. Outside of academics,
+                       I love gaming and learning about the latest tech trends!</p>
+                </div>
+                <div class="about-images">
+                    <img src="https://www.enggwave.com/wp-content/uploads/2020/08/IIT-Indore-Logo-1.png" class="iitilogo">
+                    <img src="https://images.pond5.com/computer-science-animated-word-cloud-footage-074104138_prevstill.jpeg" class="cse">
+                    <img src="https://timdorr.com/press/wp-content/uploads/2016/01/Code_feat.jpg" class="code">
+                </div>
+            
+            </div>
+            <div class="skillsbar" id="skillsbar">
+                <div class="close"><svg width="10" height="10" viewBox="0 0 10 10" style="color:currentColor" xmlns="http://www.w3.org/2000/svg" class="h-full w-full"><rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent" stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect></svg><svg width="40px" height="40px" viewBox="0 0 24 24"
+                 fill="currentColor" x="236" y="236" role="img" style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" onclick="closeskillsbar()">
+                    <path fill="currentColor" d="M16.066 8.995a.75.75 0 1 0-1.06-1.061L12 10.939L8.995 7.934a.75.75 0 1 0-1.06 1.06L10.938 12l-3.005 3.005a.75.75 0 0 0 1.06 1.06L12 13.06l3.005 3.006a.75.75 0 0 0 1.06-1.06L13.062 12l3.005-3.005Z"/></g></svg>
+                 </div>
+                 <br>
+                 <div class="text">
+                     <h2>Skills</h2>
+                     <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="skills-images">
+                        <img src="https://clipart.info/images/ccovers/1499794874html5-js-css3-logo-png.png" class="skills-logo">
+                    </div>
+                 </div>
+                 </div>
+                 <div class="projectbar" id="projectbar">
+                    <div class="close"><svg width="10" height="10" viewBox="0 0 10 10" style="color:currentColor" xmlns="http://www.w3.org/2000/svg" class="h-full w-full"><rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent" stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect></svg><svg width="40px" height="40px" viewBox="0 0 24 24"
+                     fill="currentColor" x="236" y="236" role="img" style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" onclick="closeprojectbar()">
+                        <path fill="currentColor" d="M16.066 8.995a.75.75 0 1 0-1.06-1.061L12 10.939L8.995 7.934a.75.75 0 1 0-1.06 1.06L10.938 12l-3.005 3.005a.75.75 0 0 0 1.06 1.06L12 13.06l3.005 3.006a.75.75 0 0 0 1.06-1.06L13.062 12l3.005-3.005Z"/></g></svg>
+                     </div>
+                     <br>
+                     <div class="text">
+                         <h2>Portfolio</h2>
+                         <div class="project">
+                            <p><b>Project Title : </b></p>
+                            <p>Chess Database Management System</p>
+                            <p><b>Project description :</b></p>
+                            <p>An easy-to-use chess website that lets users play against the computer, another user, or themselves. Players are ranked according to their scores.
+                                 Users of this website can compete with their peers and compare their games with them.
+                            </p>
+                        </div>
+                        <div class="project-images">
+                           <img src="https://rjwagner49.com/Personal/Vacation/Vac20/January/Chess106.jpg " class="chess">
+                           <img src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" class="mysql" >
+                            
+                        </div>
+                     </div>
+                     </div>
+                     <div class="contactbar" id="contactbar">
+                        <div class="close"><svg width="10" height="10" viewBox="0 0 10 10" style="color:currentColor" xmlns="http://www.w3.org/2000/svg" class="h-full w-full"><rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent" stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect></svg><svg width="40px" height="40px" viewBox="0 0 24 24"
+                         fill="currentColor" x="236" y="236" role="img" style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" onclick="closecontactbar()">
+                            <path fill="currentColor" d="M16.066 8.995a.75.75 0 1 0-1.06-1.061L12 10.939L8.995 7.934a.75.75 0 1 0-1.06 1.06L10.938 12l-3.005 3.005a.75.75 0 0 0 1.06 1.06L12 13.06l3.005 3.006a.75.75 0 0 0 1.06-1.06L13.062 12l3.005-3.005Z"/></g></svg>
+                         </div>
+                         <br>
+                         <div class="text">
+                             <h2>Contact</h2>
+                             <p>Name : Annamareddi Suhitha</p>
+                             <p>Roll No : 230001008</p>
+                             <p>e-mail : cse230001008@iiti.ac.in</p>
+                         </div>
+                         </div>
+            <div class="main-content2">
+            <main class="col-12 col-lg-7 col-md-12">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>My name is Annamareddi Suhitha, and I'm currently a second-year student pursuing a degree in Computer Science Engineering
+                         at IIT Indore. I have a strong passion for programming and software development, and I enjoy exploring new
+                          technologies and coding languages. In addition to my studies, I'm involved in various student clubs, including 
+                          the coding club and, where I collaborate with peers on projects and competitions. I'm excited to deepen
+                           my knowledge in areas like artificial intelligence and machine learning as I progress in my studies. Outside of academics,
+                            I love gaming and learning about the latest tech trends!</p>
+                </section>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </section>
+                <section id="portfolio">
+                    <h2>Portfolio</h2>
+                    <div class="project">
+                        <p><b>Project Title : </b></p>
+                        <p>Chess Database Management System</p>
+                        <p><b>Project description :</b></p>
+                        <p>An easy-to-use chess website that lets users play against the computer, another user, or themselves. Players are ranked according to their scores.
+                             Users of this website can compete with their peers and compare their games with them.
+                        </p>
+                    </div>
+                    
+                </section>
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <form>
+                        <p>Name : Annamareddi Suhitha</p>
+                        <p>Roll No : 230001008</p>
+                        <p>e-mail : cse230001008@iiti.ac.in</p>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+          function openaboutbar() {
+            document.getElementById("aboutbar").classList.add('open');
+            document.querySelector('.main-content1').classList.add('blurred');
+            document.querySelector('.main-content2').classList.add('blurred');
+        }
+
+        function closeaboutbar() {
+            document.getElementById("aboutbar").classList.remove('open');
+            document.querySelector('.main-content1').classList.remove('blurred');
+            document.querySelector('.main-content2').classList.remove('blurred');
+        }
+
+        document.getElementById('about-pop').addEventListener('click', function () {
+            openaboutbar();
+        });
+        
+        function openskillsbar() {
+            document.getElementById("skillsbar").classList.add('open');
+            document.querySelector('.main-content1').classList.add('blurred');
+            document.querySelector('.main-content2').classList.add('blurred');
+        }
+
+        function closeskillsbar() {
+            document.getElementById("skillsbar").classList.remove('open');
+            document.querySelector('.main-content1').classList.remove('blurred');
+            document.querySelector('.main-content2').classList.remove('blurred');
+        }
+
+        document.getElementById('skills-pop').addEventListener('click', function () {
+            openskillsbar();
+        });
+
+        function openprojectbar() {
+            document.getElementById("projectbar").classList.add('open');
+            document.querySelector('.main-content1').classList.add('blurred');
+            document.querySelector('.main-content2').classList.add('blurred');
+        }
+
+        function closeprojectbar() {
+            document.getElementById("projectbar").classList.remove('open');
+            document.querySelector('.main-content1').classList.remove('blurred');
+            document.querySelector('.main-content2').classList.remove('blurred');
+        }
+
+        document.getElementById('project-pop').addEventListener('click', function () {
+            openprojectbar();
+        });
+
+        function opencontactbar() {
+            document.getElementById("contactbar").classList.add('open');
+            document.querySelector('.main-content1').classList.add('blurred');
+            document.querySelector('.main-content2').classList.add('blurred');
+        }
+
+        function closecontactbar() {
+            document.getElementById("contactbar").classList.remove('open');
+            document.querySelector('.main-content1').classList.remove('blurred');
+            document.querySelector('.main-content2').classList.remove('blurred');
+        }
+
+        document.getElementById('contact-pop').addEventListener('click', function () {
+            opencontactbar();
+        });
+
+    </script>
+</body>
+</html>
